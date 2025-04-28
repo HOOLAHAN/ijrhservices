@@ -18,7 +18,7 @@ const experienceData: Experience[] = [
     company: "PF Geomatics Ltd",
     logo: pfgeomatics,
     duration: "Apr 2023 - Present",
-    website: "http:/www.pfgeomatics.com/",
+    website: "https:/www.pfgeomatics.com/",
     responsibilities: [
       "Collaborated with clients on multiple projects across London area to understand project requirements and objectives, ensuring effective communication.",
       "Conducted site surveys, utilising advanced surveying equipment/software.",
@@ -32,7 +32,7 @@ const experienceData: Experience[] = [
     company: "Harbour Contractors Ltd",
     logo: harbourContractors,
     duration: "Sept 2020 - Aug 2022",
-    website: "http://www.harbourcontractors.co.uk/",
+    website: "https://www.harbourcontractors.co.uk/",
     responsibilities: [
       "Co-founded and managed a successful construction management firm that specialised in domestic projects, overseeing a £1.9M new-build project and an £800K extension for private clients.",
       "Demonstrated expert project management and organisational skills to take ownership of the entire process from start to finish",

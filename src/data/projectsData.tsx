@@ -1,10 +1,10 @@
 // src/projectsData.ts
-import tipsyTouristLogo from './logos/tipsy_tourist.svg';
-import stratoStructLogo from './logos/stratostruct.svg';
-import findAFilmLogo from './logos/find_a_film.svg';
-import harbourContractors from './logos/harbourcontractors.svg';
-import yahtzeeLogo from './logos/yahtzee_logo.png'
-import pfgeomatics from './logos/pfglogo.png'
+import tipsyTouristLogo from '../logos/tipsy_tourist.svg';
+import stratoStructLogo from '../logos/stratostruct.svg';
+import findAFilmLogo from '../logos/find_a_film.svg';
+import harbourContractors from '../logos/harbourcontractors.svg';
+import yahtzeeLogo from '../logos/yahtzee_logo.png'
+import pfgeomatics from '../logos/pfglogo.png'
 
 export interface Project {
   title: string;

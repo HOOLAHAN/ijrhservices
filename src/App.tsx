@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { ChakraProvider, Box, Heading, extendTheme, Center, Text } from '@chakra-ui/react';
-import projects, { Project } from './projectsData';
-import constructionProjects from './constructionProjectsData';
-import ProjectCard from './ProjectCard';
-import ConstructionProjectCard from './ConstructionProjectCard';
-import Modal from './Modal';
-import About from './About';
+import projects, { Project } from './data/projectsData';
+import constructionProjects from './data/constructionProjectsData';
+import ProjectCard from './components/ProjectCard';
+import ConstructionProjectCard from './components/ConstructionProjectCard';
+import Modal from './components/Modal';
+import About from './components/About';
 
 const theme = extendTheme({});
 
