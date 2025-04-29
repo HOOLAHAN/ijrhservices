@@ -1,4 +1,13 @@
-export interface ConstructionProject {
+import victoriaStreetImg from '../media/projects/victoria_street.png';
+import clarendonRoadImg from '../media/projects/clarendon_road.png';
+import gatwickStationImg from '../media/projects/gatwick_station.png';
+import trippetsImg from '../media/projects/trippets.png';
+import javaSoundImg from '../media/projects/java_sound.png';
+import hinkleyImg from '../media/projects/hinkley.png';
+import crossrailImg from '../media/projects/crossrail.png';
+import gtsImg from '../media/projects/gts.png';
+
+interface Project {
   company: string;
   website: string;
   projects: {
@@ -11,34 +20,35 @@ export interface ConstructionProject {
   }[];
 }
 
-const constructionProjects: ConstructionProject[] = [
+
+const constructionProjects: Project[] = [
   {
     company: "PF Geomatics Ltd",
     website: "https://www.pfgeomatics.com/",
     projects: [
       {
         projectName: "105 Victoria Street",
-        image: "victoria_street.png",
+        image: victoriaStreetImg,
         startDate: "June 2024",
         endDate: "April 2025",
         location: "Westminster, London",
-        details: "At 105 Victoria Street, I collaborated with Severfield, a leading steel specialist, to facilitate steel erection and the installation of precast planks. My responsibilities included surveying embedments cast into the core, creating fin plate setting out drawings, and verifying steel alignments. I effectively communicated tirfor/pack requirements, set out precast planks, and delivered as-built survey reports for handover, ensuring precision and quality."
+        details: "Surveying and setting out services for steel erection and precast plank installation. Responsible for checking embedded items, producing fin plate setting out drawings, conducting as-built surveys, and verifying steel alignments to ensure quality control on a major commercial development."
       },
       {
         projectName: "53 Clarendon Road",
-        image: "clarendon_road.png",
+        image: clarendonRoadImg,
         startDate: "November 2023",
         endDate: "February 2024",
         location: "Watford, London",
-        details: "I played a key role in Regal's The Clarendon project, a high-rise residential development in Watford. Collaborating closely with the Regal team, I oversaw the concrete subcontractor's work, ensuring quality standards through meticulous quality checks, rebar inspections, and both pre-pour and post-pour surveys. I also conducted setting out verifications to maintain the stringent tolerances needed for cladding, contributing to the project's success in Watford's regeneration."
+        details: "Supported the construction of a high-rise residential tower by providing critical pre-pour and post-pour surveys, rebar inspections, and setting out verifications to maintain strict construction tolerances for structural and facade installation."
       },
       {
         projectName: "Gatwick Station Project",
-        image: "gatwick_station.png",
+        image: gatwickStationImg,
         startDate: "April 2023",
         endDate: "November 2023",
         location: "Gatwick, London",
-        details: "I led essential site engineering and surveying tasks for Lindner Prater Ltd, focusing on the precise installation of roofing, internal/external cladding, and escalator glazing. My role required a high level of accuracy, where I conducted comprehensive surveys to identify potential tolerance issues and interface challenges, ensuring high-quality construction standards."
+        details: "Delivered detailed setting out, site engineering, and surveying services for the installation of cladding, roofing, and glazing at Gatwick Station. Focused on achieving tight construction tolerances and resolving interface and layout challenges."
       }
     ]
   },
@@ -48,19 +58,19 @@ const constructionProjects: ConstructionProject[] = [
     projects: [
       {
         projectName: "Trippets",
-        image: "trippets.png",
+        image: trippetsImg,
         startDate: "September 2020",
         endDate: "September 2022",
         location: "West Sussex, UK",
-        details: "I managed the Trippets project, a £2M new build for a private client, from demolition to completion. The project included piled foundations, a green oak frame, timber framing with high-quality insulation to achieve an EPC A rating, underfloor heating, a swimming pool, garage, pool house, landscaped gardens, solar panels, and a ground source heat pump using 9 boreholes. The property featured premium finishes, cedar cladding, a slate roof, and limestone walls, reflecting my commitment to delivering high-quality results."
+        details: "Provided technical site engineering support for a high-end residential new build, including setting out for piled foundations, structural framing, swimming pool installation, and landscaping works. Focused on precision and high-quality project delivery."
       },
       {
         projectName: "Java Sound",
-        image: "java_sound.png",
+        image: javaSoundImg,
         startDate: "November 2021",
         endDate: "September 2022",
         location: "West Sussex, UK",
-        details: "I managed the Java Sound project, a £1M house extension that seamlessly blended modern features with traditional aesthetics. Key elements included a green oak structure, bifolding doors, a spacious decking area, an air source heat pump, underfloor heating, larch cladding, and a zinc roof. I coordinated subcontractors effectively and ensured regular client updates, maintaining project timelines and budget."
+        details: "Delivered setting out and site coordination services for a premium residential extension project. Involved in surveying works, layout verification, and quality inspections for key structural and architectural features."
       }
     ]
   },
@@ -70,27 +80,27 @@ const constructionProjects: ConstructionProject[] = [
     projects: [
       {
         projectName: "Hinkley Point C Nuclear Power Station",
-        image: "hinkley.png",
+        image: hinkleyImg,
         startDate: "April 2019",
         endDate: "September 2020",
         location: "Somerset, UK",
-        details: "As a Setting Out Engineer / Section Engineer at Hinkley Point C, I gained invaluable field experience working on the Nuclear Island Unit 1, including a record-breaking UK raft slab pour of 9000m3. I managed material deliveries, quality checks, Health & Safety protocols, and technical issue resolution, while mentoring junior engineers and maintaining client relationships."
+        details: "Supported major civil engineering activities by providing setting out and surveying services on critical elements of the Nuclear Island. Key responsibilities included quality control, material verification, and site safety compliance during one of the UK's largest concrete pours."
       },
       {
         projectName: "Crossrail: Liverpool Street Station",
-        image: "crossrail.png",
+        image: crossrailImg,
         startDate: "September 2016",
         endDate: "April 2019",
         location: "Liverpool Street, London",
-        details: "As a Package Manager, I led the coordination of fit-out package subcontractors, including handrails, edge protection, and balustrades. I ensured adherence to Health & Safety and Quality Assurance standards while managing contract deliverables and collaborating with commercial and planning teams to meet project timelines."
+        details: "Delivered technical support and surveying input for fit-out works within Liverpool Street Station. Involved in layout verification, quality checks, and ensuring compliance with safety and engineering standards for major station infrastructure."
       },
       {
         projectName: "Group Technical Services",
-        image: "gts.png",
+        image: gtsImg,
         startDate: "September 2015",
         endDate: "September 2016",
         location: "Dartford, UK",
-        details: "In my role as a Temporary Works Design Engineer, I developed geotechnical temporary works design solutions to enhance construction site safety and infrastructure. I also improved my communication and presentation skills through delivering technical presentations."
+        details: "Provided technical support and temporary works solutions as part of the in-house engineering services team, gaining experience in survey coordination and risk-based temporary design."
       }
     ]
   }

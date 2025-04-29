@@ -1,46 +1,51 @@
-import React, { useState, useRef } from 'react';
-import { ChakraProvider, Box, Heading, extendTheme, Center, Text } from '@chakra-ui/react';
-import { Project } from './types/project';
-import constructionProjects from './data/constructionProjectsData';
-import ConstructionProjectCard from './components/ConstructionProjectCard';
-import Modal from './components/Modal';
-import About from './components/About';
-
-const theme = extendTheme({});
+import React, { useState, useEffect } from 'react';
+import { Box, Fade } from '@chakra-ui/react';
+import Navbar from './components/Navbar';
+import Contact from './components/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import TopographicSurveys from './pages/services/TopographicSurveys';
+import MeasuredBuildingSurveys from './pages/services/MeasuredBuildingSurveys';
+import DrainageServiceMapping from './pages/services/DrainageServiceMapping';
+import SettingOutServices from './pages/services/SettingOutServices';
+import SiteEngineeringSupport from './pages/services/SiteEngineeringSupport';
 
 const App: React.FC = () => {
-  const projectsRef = useRef(null);
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [showModal, setShowModal] = useState(false);
+  const [currentPage, setCurrentPage] = useState('Home');
+  const [showPage, setShowPage] = useState(true);
 
-  const handleCloseModal = () => {
-    setShowModal(false);
-    setSelectedProject(null);
+  useEffect(() => {
+    setShowPage(false); // Start fade out
+    const timeout = setTimeout(() => {
+      setShowPage(true); // Then fade in
+    }, 50); // Short delay to reset fade
+    return () => clearTimeout(timeout);
+  }, [currentPage]);
+
+  const renderPage = () => {
+    if (currentPage === 'Home') return <Home />;
+    if (currentPage === 'Projects') return <Projects />;
+    if (currentPage === 'Topographic Surveys') return <TopographicSurveys />;
+    if (currentPage === 'Measured Building Surveys') return <MeasuredBuildingSurveys />;
+    if (currentPage === 'Drainage & Service Mapping') return <DrainageServiceMapping />;
+    if (currentPage === 'Setting Out Services') return <SettingOutServices />;
+    if (currentPage === 'Site Engineering Support') return <SiteEngineeringSupport />;
+    
+    return <Home />;
   };
 
   return (
-    <ChakraProvider theme={theme}>
-      <Box p="6" maxWidth={1600} mx="auto">
-        <About />      
-        <Center><Heading ref={projectsRef} my={4} size="lg">Construction Projects</Heading></Center>
-        {constructionProjects.map((company, companyIndex) => (
-          <Box key={companyIndex} mb={6}>
-            <Center><Text fontSize="xl" fontWeight="bold" mt={4} mb={2}>{company.company}</Text></Center>
-            <Box display="flex" flexWrap="wrap" gridGap="4" justifyContent="center">
-              {company.projects.map((project, projectIndex) => (
-                <ConstructionProjectCard
-                  key={`${companyIndex}-${projectIndex}`}
-                  project={project}
-                  company={company.company}
-                />
-              ))}
-            </Box>
+    <div className="flex flex-col min-h-screen">
+      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <main className="flex-grow px-4 py-6 max-w-7xl mx-auto w-full" style={{ minHeight: 'calc(100vh - 300px)' }}>
+        <Fade in={showPage}>
+          <Box w="full">
+            {renderPage()}
           </Box>
-        ))}
-        
-        {showModal && selectedProject && <Modal project={selectedProject} onClose={handleCloseModal} />}
-      </Box>
-    </ChakraProvider>
+        </Fade>
+      </main>
+      <Contact />
+    </div>
   );
 };
 
