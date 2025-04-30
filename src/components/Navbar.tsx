@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-import IJRHLogo from '../media/logos/IJRH_SERVICES_LOGO.png';
+import IJRHLogo from '../media/brand/IJRH_SERVICES_LOGO.png';
 
 interface NavbarProps {
   currentPage: string;

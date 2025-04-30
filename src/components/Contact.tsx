@@ -6,7 +6,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   return (
-    <Box bg="gray.600" color="white" py={2} px={4} mt={0}>
+    <Box bg="gray.600" color="white" py={3} px={4}>
       <VStack spacing={2}>
         <Text fontSize="xl" fontWeight="bold">
           Contact Us
