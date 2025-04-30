@@ -12,6 +12,10 @@ const Projects: React.FC = () => {
         Projects
       </Heading>
 
+      <Text mb={10} fontSize="lg" textAlign="center">
+        IJRH Services has delivered surveying and engineering solutions across a variety of commercial and residential projects throughout London and the South East. Our experience spans high-rise developments, infrastructure upgrades, and bespoke residential builds. Here are some highlights from our recent work.
+      </Text>
+
       <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={8} mt={8}>
         {allProjects.map((project, index) => (
           <Box key={index} borderWidth="1px" borderRadius="md" overflow="hidden" p={4}>
