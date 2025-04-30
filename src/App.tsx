@@ -25,8 +25,8 @@ const App: React.FC = () => {
   const renderPage = () => {
     if (currentPage === 'Home') return <Home />;
     if (currentPage === 'Projects') return <Projects />;
-    if (currentPage === 'Topographic Surveys') return <TopographicSurveys />;
     if (currentPage === 'Measured Building Surveys') return <MeasuredBuildingSurveys />;
+    if (currentPage === 'Topographic Surveys') return <TopographicSurveys />;
     if (currentPage === 'Drainage & Service Mapping') return <DrainageServiceMapping />;
     if (currentPage === 'Setting Out Services') return <SettingOutServices />;
     if (currentPage === 'Site Engineering Support') return <SiteEngineeringSupport />;

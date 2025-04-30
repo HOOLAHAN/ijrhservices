@@ -21,7 +21,7 @@ const DrainageServiceMapping: React.FC = () => {
         </Box>
 
         <Text fontSize={{ base: "md", md: "lg" }} maxW="3xl">
-          IJRH Services provide detailed utility drawings to support your construction, refurbishment, and development projects. We map the visible drainage runs and service positions on site, identifying the type, location, and depth where accessible.
+          We provide detailed utility drawings to support your construction, refurbishment, and development projects. We map the visible drainage runs and service positions on site, identifying the type, location, and depth where accessible.
         </Text>
 
         <Text fontSize={{ base: "md", md: "lg" }} maxW="3xl">
@@ -31,7 +31,7 @@ const DrainageServiceMapping: React.FC = () => {
         <VStack align="start" spacing={6} divider={<StackDivider borderColor="gray.200" />} w="full" maxW="3xl" textAlign="left">
           <Box>
             <Heading size="md" mb={2}>Statutory Services Search</Heading>
-            <Text>
+            <Text fontSize={{ base: "md", md: "lg" }} maxW="3xl">
               As an additional service, we can provide desktop utility searches to help identify key service providers and the likely location of underground utilities based on statutory records.
             </Text>
           </Box>

@@ -25,8 +25,8 @@ interface NavbarProps {
 
 const pages = [
   'Home',
-  'Topographic Surveys',
   'Measured Building Surveys',
+  'Topographic Surveys',
   'Drainage & Service Mapping',
   'Setting Out Services',
   'Site Engineering Support',
