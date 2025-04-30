@@ -15,15 +15,15 @@ const Projects: React.FC = () => {
       <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={8} mt={8}>
         {allProjects.map((project, index) => (
           <Box key={index} borderWidth="1px" borderRadius="md" overflow="hidden" p={4}>
-            <Image
-              src={project.image}
-              alt={project.projectName}
-              mb={4}
-              borderRadius="md"
-              objectFit="cover"
-              maxH="200px"
-              w="full"
-            />
+            <Box position="relative" h="200px" w="full" overflow="hidden" mb={4} borderRadius="md">
+              <Image
+                src={project.image}
+                alt={project.projectName}
+                objectFit="cover"
+                w="full"
+                h="full"
+              />
+            </Box>
             <Heading size="md" mb={2}>
               {project.projectName}
             </Heading>
@@ -34,6 +34,7 @@ const Projects: React.FC = () => {
           </Box>
         ))}
       </SimpleGrid>
+
     </Box>
   );
 };
