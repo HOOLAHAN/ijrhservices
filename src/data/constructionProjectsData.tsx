@@ -46,8 +46,8 @@ const constructionProjects: Project[] = [
       {
         projectName: "41 Tower Hill",
         image: towerHillImg,
-        startDate: "2024",
-        endDate: "2024",
+        startDate: "March 2024",
+        endDate: "May 2024",
         location: "Tower Hill, London",
         details:
         "Delivered surveying and engineering support for a commercial refurbishment project in central London. Responsibilities included conducting level checks and establishing precise control for gridlines, datums, and structural openings. The work ensured accurate blockwork alignment and facilitated demolition activities through clear, well-defined setting out."
@@ -55,8 +55,8 @@ const constructionProjects: Project[] = [
       {
         projectName: "Piccadilly Pavillion",
         image: piccadillyImg,
-        startDate: "2024",
-        endDate: "2024",
+        startDate: "April 2024",
+        endDate: "July 2024",
         location: "Piccadilly Circus, London",
         details:
         "Provided setting out and engineering support for the Piccadilly Pavillion redevelopment. Key duties included establishing site control, setting out gridlines, wall positions, and screed stop ends. The work was carried out with a strong focus on accuracy and alignment, supporting the efficient delivery of the structural and architectural layout."
