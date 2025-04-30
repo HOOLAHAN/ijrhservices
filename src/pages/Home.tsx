@@ -62,7 +62,6 @@ const Home: React.FC = () => {
               textAlign="left"
               bg="white"
               shadow="sm"
-              _hover={{ shadow: 'md' }}
             >
               <Heading size="md" mb={2}>{title}</Heading>
               <Text fontSize="sm" color="gray.600">{description}</Text>
