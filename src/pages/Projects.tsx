@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
       <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={8} mt={8}>
         {allProjects.map((project, index) => (
           <Box key={index} borderWidth="1px" borderRadius="md" overflow="hidden" p={4}>
-            <Box position="relative" h="200px" w="full" overflow="hidden" mb={4} borderRadius="md">
+            <Box aspectRatio={4 / 3} w="full" overflow="hidden" mb={4} borderRadius="md">
               <Image
                 src={project.image}
                 alt={project.projectName}
