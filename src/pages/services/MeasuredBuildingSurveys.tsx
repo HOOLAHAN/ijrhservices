@@ -14,7 +14,7 @@ const MeasuredBuildingSurveys: React.FC = () => {
           <Image
             src={MeasuredBuildingImage}
             alt="Measured Building Surveys"
-            objectFit="cover"
+            objectFit="contain"
             w="full"
             h="full"
           />
