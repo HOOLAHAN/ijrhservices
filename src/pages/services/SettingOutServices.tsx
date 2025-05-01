@@ -1,13 +1,11 @@
 import React from 'react';
 import { Box, Heading, Text, VStack, Image, StackDivider } from '@chakra-ui/react';
-import SettingOutImage from '../../media/services/setting_out.png';
-import backgroundImage from '../../media/brand/home_bg.png';
 
 const SettingOutServices: React.FC = () => {
   return (
     <Box
       minH="100vh"
-      bgImage={`url(${backgroundImage})`}
+      bgImage={`url('/media/brand/home_bg.png')`}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
@@ -30,7 +28,7 @@ const SettingOutServices: React.FC = () => {
         <VStack spacing={8} align="center" textAlign="center">
           <Box w="full" maxW="600px" aspectRatio={4 / 3} overflow="hidden" borderRadius="md">
             <Image
-              src={SettingOutImage}
+              src='/media/services/setting_out.png'
               alt="Setting Out Services"
               objectFit="cover"
               w="full"

@@ -16,8 +16,6 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-import IJRHLogo from '../media/brand/IJRH_SERVICES_LOGO.png';
-
 interface NavbarProps {
   currentPage: string;
   setCurrentPage: (page: string) => void;
@@ -58,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) => {
         {/* Logo (always left) */}
         <Box flexShrink={0} cursor="pointer" onClick={() => handlePageClick('Home')}>
           <Image
-            src={IJRHLogo}
+            src='/media/brand/IJRH_SERVICES_LOGO.png'
             alt="IJRH Logo"
             width={{ base: "150px", md: "200px" }}
             objectFit="contain"

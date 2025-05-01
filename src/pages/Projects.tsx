@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Heading, Text, Image, SimpleGrid } from '@chakra-ui/react';
 import constructionProjects from '../data/constructionProjectsData';
-import backgroundImage from '../media/brand/home_bg.png';
 
 const Projects: React.FC = () => {
   const allProjects = constructionProjects.flatMap(company => company.projects);
@@ -9,7 +8,7 @@ const Projects: React.FC = () => {
   return (
     <Box
       minH="100vh"
-      bgImage={`url(${backgroundImage})`}
+      bgImage={`url('/media/brand/home_bg.png')`}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"

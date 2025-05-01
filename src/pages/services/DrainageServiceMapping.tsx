@@ -1,13 +1,11 @@
 import React from 'react';
 import { Box, Heading, Text, VStack, Image, StackDivider } from '@chakra-ui/react';
-import DrainageImage from '../../media/services/drainage_service_mapping.png';
-import backgroundImage from '../../media/brand/home_bg.png';
 
 const DrainageServiceMapping: React.FC = () => {
   return (
     <Box
       minH="100vh"
-      bgImage={`url(${backgroundImage})`}
+      bgImage={`url('/media/brand/home_bg.png')`}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
@@ -30,7 +28,7 @@ const DrainageServiceMapping: React.FC = () => {
         <VStack spacing={8} align="center" textAlign="left">
           <Box w="full" maxW="600px" aspectRatio={4 / 3} overflow="hidden" borderRadius="md">
             <Image
-              src={DrainageImage}
+              src='/media/services/drainage_service_mapping.png'
               alt="Drainage & Service Mapping"
               objectFit="cover"
               w="full"

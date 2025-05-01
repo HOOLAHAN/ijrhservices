@@ -1,13 +1,11 @@
 import React from 'react';
 import { Box, Heading, Text, VStack, Image, StackDivider } from '@chakra-ui/react';
-import SiteEngineeringImage from '../../media/services/site_engineering_support.png';
-import backgroundImage from '../../media/brand/home_bg.png';
 
 const SiteEngineeringSupport: React.FC = () => {
   return (
     <Box
       minH="100vh"
-      bgImage={`url(${backgroundImage})`}
+      bgImage={`url('/media/brand/home_bg.png')`}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
@@ -30,7 +28,7 @@ const SiteEngineeringSupport: React.FC = () => {
         <VStack spacing={8} align="center" textAlign="center">
           <Box w="full" maxW="600px" aspectRatio={4 / 3} overflow="hidden" borderRadius="md">
             <Image
-              src={SiteEngineeringImage}
+              src='/media/services/site_engineering_support.png'
               alt="Site Engineering Support"
               objectFit="cover"
               w="full"

@@ -7,8 +7,6 @@ import {
   SimpleGrid,
 } from '@chakra-ui/react';
 
-import homeBg from '../media/brand/home_bg.png';
-
 const Home: React.FC = () => {
   const serviceDescriptions = {
     'Measured Building Surveys': 'Detailed floor plans, elevations and sections for planning or design.',
@@ -21,7 +19,7 @@ const Home: React.FC = () => {
   return (
     <Box
       minH="100vh"
-      bgImage={`url(${homeBg})`}
+      bgImage={`url('/media/brand/home_bg.png')`}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"

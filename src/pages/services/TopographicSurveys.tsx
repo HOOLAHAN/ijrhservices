@@ -1,13 +1,11 @@
 import React from 'react';
 import { Box, Heading, Text, VStack, Image, StackDivider } from '@chakra-ui/react';
-import TopographicImage from '../../media/services/topographic_surveys.png';
-import backgroundImage from '../../media/brand/home_bg.png';
 
 const TopographicSurveys: React.FC = () => {
   return (
     <Box
       minH="100vh"
-      bgImage={`url(${backgroundImage})`}
+      bgImage={`url('/media/brand/home_bg.png')`}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
@@ -30,7 +28,7 @@ const TopographicSurveys: React.FC = () => {
         <VStack spacing={8} align="center" textAlign="left">
           <Box w="full" maxW="600px" aspectRatio={4 / 3} overflow="hidden" borderRadius="md">
             <Image
-              src={TopographicImage}
+              src='/media/services/topographic_surveys.png'
               alt="Topographic Surveys"
               objectFit="cover"
               w="full"

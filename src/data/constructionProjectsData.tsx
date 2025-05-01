@@ -1,13 +1,3 @@
-import victoriaStreetImg from '../media/projects/victoria_street.png';
-import clarendonRoadImg from '../media/projects/clarendon_road.png';
-import towerHillImg from '../media/projects/tower_hill.png';
-import piccadillyImg from '../media/projects/piccadilly_pavillion.png';
-import gatwickStationImg from '../media/projects/gatwick_station.png';
-import trippetsImg from '../media/projects/trippets.png';
-import javaSoundImg from '../media/projects/java_sound.png';
-import hinkleyImg from '../media/projects/hinkley.png';
-import crossrailImg from '../media/projects/crossrail.png';
-
 interface Project {
   company: string;
   website: string;
@@ -21,7 +11,6 @@ interface Project {
   }[];
 }
 
-
 const constructionProjects: Project[] = [
   {
     company: "PF Geomatics Ltd",
@@ -29,7 +18,7 @@ const constructionProjects: Project[] = [
     projects: [
       {
         projectName: "105 Victoria Street",
-        image: victoriaStreetImg,
+        image: '/media/projects/victoria_street.png',
         startDate: "June 2024",
         endDate: "April 2025",
         location: "Westminster, London",
@@ -37,7 +26,7 @@ const constructionProjects: Project[] = [
       },
       {
         projectName: "53 Clarendon Road",
-        image: clarendonRoadImg,
+        image: '/media/projects/clarendon_road.png',
         startDate: "November 2023",
         endDate: "February 2024",
         location: "Watford, London",
@@ -45,7 +34,7 @@ const constructionProjects: Project[] = [
       },
       {
         projectName: "41 Tower Hill",
-        image: towerHillImg,
+        image: '/media/projects/tower_hill.png',
         startDate: "March 2024",
         endDate: "May 2024",
         location: "Tower Hill, London",
@@ -54,7 +43,7 @@ const constructionProjects: Project[] = [
       },
       {
         projectName: "Piccadilly Pavillion",
-        image: piccadillyImg,
+        image: '/media/projects/piccadilly_pavillion.png',
         startDate: "April 2024",
         endDate: "July 2024",
         location: "Piccadilly Circus, London",
@@ -63,7 +52,7 @@ const constructionProjects: Project[] = [
       },
       {
         projectName: "Gatwick Station Project",
-        image: gatwickStationImg,
+        image: '/media/projects/gatwick_station.png',
         startDate: "April 2023",
         endDate: "November 2023",
         location: "Gatwick, London",
@@ -77,7 +66,7 @@ const constructionProjects: Project[] = [
     projects: [
       {
         projectName: "Trippets",
-        image: trippetsImg,
+        image: '/media/projects/trippets.png',
         startDate: "September 2020",
         endDate: "September 2022",
         location: "West Sussex, UK",
@@ -85,7 +74,7 @@ const constructionProjects: Project[] = [
       },
       {
         projectName: "Java Sound",
-        image: javaSoundImg,
+        image: '/media/projects/java_sound.png',
         startDate: "November 2021",
         endDate: "September 2022",
         location: "West Sussex, UK",
@@ -99,7 +88,7 @@ const constructionProjects: Project[] = [
     projects: [
       {
         projectName: "Hinkley Point C Nuclear Power Station",
-        image: hinkleyImg,
+        image: '/media/projects/hinkley.png',
         startDate: "April 2019",
         endDate: "September 2020",
         location: "Somerset, UK",
@@ -107,7 +96,7 @@ const constructionProjects: Project[] = [
       },
       {
         projectName: "Crossrail: Liverpool Street Station",
-        image: crossrailImg,
+        image: '/media/projects/crossrail.png',
         startDate: "September 2016",
         endDate: "April 2019",
         location: "Liverpool Street, London",
