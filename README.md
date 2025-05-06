@@ -1,50 +1,42 @@
-# Iain Hoolahan's Portfolio Website
+# IJRH Services Ltd Website
 
-**[Website](http://www.iainhoolahan.com/)**
+**[Website](http://www.ijrhservices.co.uk/)**
 
 ## Overview
-This project is a portfolio website developed using React and Chakra UI. It showcases projects, work experience, and educational background. The project aims to be a comprehensive and interactive resume for anyone interested in learning more about Iain Hoolahan's work and experience.
+This is the official website for IJRH Services Ltd, a London-based land surveying and site engineering company. Built using React and Chakra UI, the site is fully responsive and optimised for modern web performance. It provides clear service descriptions, past project highlights, and company background.
 
 ## Features
-About: Brief introduction and navigation links.
-Projects: Displays a grid of project cards, with detailed information available in modal windows.
+✅ Responsive design for mobile, tablet, and desktop
+
+🧭 Project portfolio with images and details
+
+📍 Service-specific pages with structured layout
+
+💡 SEO-friendly metadata and performance optimisations
+
+📷 Background and service images hosted via AWS S3
+
+🚀 Deployed using GitHub Actions, S3, and CloudFront (HTTPS-enabled)
+
+📊 Google Analytics integration via Google Tag Manager
 
 ## Technologies Used
-- React
-- TypeScript
-- Chakra UI
-- CSS
+⚛️ React (with TypeScript)
 
-## Setup
-To get started, clone the repository to your local machine:
-````
-git clone https://github.com/username/portfolio.git
-````
+🎨 Chakra UI
 
-Navigate to the project directory:
-````
-cd portfolio
-````
+🧩 CSS Modules & Custom Styling
 
-Install the required dependencies:
-````
+☁️ AWS S3 & CloudFront
+
+🛠 GitHub Actions (CI/CD)
+
+📈 Google Tag Manager (GTM) & Google Analytics
+
+## Installation
+
+````git clone https://github.com/your-username/ijrhservices.git
+cd ijrhservices
 npm install
-````
+npm start````
 
-To run the tests:
-````
-npm test
-````
-
-To run the development server:
-````
-npm start
-````
-
-The website should now be running on http://localhost:3000/.
-
-## Contributing
-If you find a bug or have a suggestion, feel free to create an issue or make a pull request.
-
-## Author
-Iain Hoolahan
