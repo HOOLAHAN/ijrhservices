@@ -26,7 +26,8 @@ const Home: React.FC = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      px={4}
+      px={{ base: 4, md: 8 }}
+      py={{ base: 6, md: 10 }}
     >
       <Box
         bg="rgba(255, 255, 255, 0.65)"
