@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
           </HStack>
 
           <Text fontSize="sm" color="gray.400" mt={2}>
-            &copy; {new Date().getFullYear()} IJRH Services Ltd. All rights reserved.{' '}
+            &copy; {new Date().getFullYear()} IJRH Services Ltd. Registered in England and Wales. Company No. 16424854.{' '}
             <Link onClick={onOpen} textDecoration="underline" _hover={{ color: 'gray.300' }}>
               Privacy Policy
             </Link>
