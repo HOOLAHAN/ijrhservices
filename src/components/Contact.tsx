@@ -9,7 +9,7 @@ import {
   Icon,
   useDisclosure,
 } from '@chakra-ui/react';
-import { EmailIcon, PhoneIcon } from '@chakra-ui/icons';
+import { EmailIcon } from '@chakra-ui/icons';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import PrivacyPolicyModal from './PrivacyPolicy';
 
@@ -23,11 +23,6 @@ const Contact: React.FC = () => {
           <Text fontSize="xl" fontWeight="bold">
             Contact Us
           </Text>
-
-          <HStack spacing={4}>
-            <Icon as={PhoneIcon} />
-            <Text fontSize="sm">+44 7545 959137</Text>
-          </HStack>
 
           <HStack spacing={4}>
             <Icon as={EmailIcon} />
