@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
         </Heading>
 
         <Text mb={10} fontSize="lg" textAlign="center">
-          IJRH Services has delivered surveying and engineering solutions across a variety of commercial and residential projects throughout London and the South East. Our experience spans high-rise developments, infrastructure upgrades, and bespoke residential builds. Here are some highlights from our recent work.
+          At IJRH Services, we bring deep experience from a wide range of commercial and residential projects across London and the South East. The following highlights showcase work delivered by our lead surveyor and site engineer during previous roles for industry-leading contractors and consultancies. This experience informs the high-quality service we now provide under the IJRH Services banner.
         </Text>
 
         <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={8}>
