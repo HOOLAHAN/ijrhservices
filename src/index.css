@@ -41,6 +41,8 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .product-card { min-height: 400px; padding: clamp(28px, 4vw, 42px); display: flex; flex-direction: column; align-items: flex-start; border-radius: 22px; }
 .product-card--yahtzee { background: #f7e8df; color: #54251f; }
 .product-card--tipsy { background: #9ecac2; color: #123934; }
+.product-card--harbour { background: #dbe8ee; color: #183b4b; }
+.product-card--pfgeomatics { background: #e4dfca; color: #3b3520; }
 .product-card--soon { min-height: 290px; background: transparent; border: 1px dashed #52615e; color: white; }
 .product-mark { width: 70px; height: 70px; margin-bottom: 46px; display: grid; place-items: center; border: 2px solid currentColor; border-radius: 20px; font-size: 25px; font-weight: 900; }
 .product-card .chakra-badge { margin-bottom: 14px; background: rgba(255,255,255,.35); color: inherit; }
@@ -50,4 +52,6 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .product-card button span, .product-card a[role=button] { color: white; }
 .product-card--yahtzee a[role=button] { background: #54251f; }
 .product-card--tipsy a[role=button] { background: #123934; }
+.product-card--harbour a[role=button] { background: #183b4b; }
+.product-card--pfgeomatics a[role=button] { background: #3b3520; }
 @media (max-width: 767px) { .site-nav { padding: 10px 16px; } .nav-logo { width: 140px; } .nav-descriptor { display: none; } .home-hero { padding-top: 64px; } .path-card { min-height: 390px; } }

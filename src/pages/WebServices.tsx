@@ -19,6 +19,22 @@ const products = [
     mark: 'TT',
     tone: 'tipsy',
   },
+  {
+    name: 'Harbour Contractors',
+    tag: 'Company website',
+    url: 'https://harbourcontractors.co.uk/',
+    description: 'A professional company website built to present Harbour Contractors’ services, experience and business clearly to prospective clients.',
+    mark: 'HC',
+    tone: 'harbour',
+  },
+  {
+    name: 'PF Geomatics',
+    tag: 'Company website',
+    url: 'https://www.pfgeomatics.com/',
+    description: 'A dedicated company website built to showcase PF Geomatics, its specialist capabilities and the services it provides.',
+    mark: 'PF',
+    tone: 'pfgeomatics',
+  },
 ];
 
 const WebServices: React.FC = () => (
