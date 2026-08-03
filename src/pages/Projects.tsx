@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
               <Heading size="md" mb={2}>
                 {project.projectName}
               </Heading>
-              <Text fontSize="sm" color="gray.500" mb={2}>
+              <Text fontSize="sm" color="gray.600" mb={2}>
                 {project.startDate} – {project.endDate} | {project.location}
               </Text>
               <Text fontSize="md">{project.details}</Text>

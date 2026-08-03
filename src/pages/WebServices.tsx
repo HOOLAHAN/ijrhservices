@@ -1,0 +1,53 @@
+import React from 'react';
+import { Badge, Box, Button, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import { FiArrowUpRight } from 'react-icons/fi';
+
+const products = [
+  {
+    name: 'Yahtzee',
+    tag: 'Game',
+    url: 'https://yahtzee.ijrhservices.co.uk/',
+    description: 'A polished digital take on the classic dice game. Quick to learn, easy to play and built for friendly competition.',
+    mark: 'Y',
+    tone: 'yahtzee',
+  },
+  {
+    name: 'Tipsy Tourist',
+    tag: 'Travel',
+    url: 'https://tipsytourist.ijrhservices.co.uk/',
+    description: 'A playful travel companion for discovering places, planning stops and making more of a trip away.',
+    mark: 'TT',
+    tone: 'tipsy',
+  },
+];
+
+const WebServices: React.FC = () => (
+  <Box className="section-page web-page">
+    <Box className="web-intro">
+      <Text className="section-kicker">Web services</Text>
+      <Heading>Useful ideas, brought to life.</Heading>
+      <Text>IJRH builds and operates a growing collection of focused web products and mobile applications. Each one has its own home, with IJRH Services providing the foundation behind it.</Text>
+    </Box>
+    <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6} maxW="1100px" mx="auto">
+      {products.map(product => (
+        <Box className={`product-card product-card--${product.tone}`} key={product.name}>
+          <Box className="product-mark">{product.mark}</Box>
+          <Badge>{product.tag}</Badge>
+          <Heading>{product.name}</Heading>
+          <Text>{product.description}</Text>
+          <Button as="a" href={product.url} target="_blank" rel="noopener noreferrer" rightIcon={<FiArrowUpRight />}>
+            Visit {product.name}
+          </Button>
+        </Box>
+      ))}
+      <Box className="product-card product-card--soon">
+        <Box className="product-mark">+</Box>
+        <Badge>Coming next</Badge>
+        <Heading>More in the works</Heading>
+        <Text>New tools and experiences will join the collection here as they launch.</Text>
+      </Box>
+    </SimpleGrid>
+  </Box>
+);
+
+export default WebServices;

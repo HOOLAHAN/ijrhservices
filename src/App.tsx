@@ -9,6 +9,8 @@ import MeasuredBuildingSurveys from './pages/services/MeasuredBuildingSurveys';
 import DrainageServiceMapping from './pages/services/DrainageServiceMapping';
 import SettingOutServices from './pages/services/SettingOutServices';
 import SiteEngineeringSupport from './pages/services/SiteEngineeringSupport';
+import SurveyingServices from './pages/SurveyingServices';
+import WebServices from './pages/WebServices';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -23,7 +25,9 @@ const App: React.FC = () => {
   }, [currentPage]);
 
   const renderPage = () => {
-    if (currentPage === 'Home') return <Home />;
+    if (currentPage === 'Home') return <Home setCurrentPage={setCurrentPage} />;
+    if (currentPage === 'Surveying Services') return <SurveyingServices setCurrentPage={setCurrentPage} />;
+    if (currentPage === 'Web Services') return <WebServices />;
     if (currentPage === 'Projects') return <Projects />;
     if (currentPage === 'Measured Building Surveys') return <MeasuredBuildingSurveys />;
     if (currentPage === 'Topographic Surveys') return <TopographicSurveys />;
@@ -31,13 +35,13 @@ const App: React.FC = () => {
     if (currentPage === 'Setting Out Services') return <SettingOutServices />;
     if (currentPage === 'Site Engineering Support') return <SiteEngineeringSupport />;
     
-    return <Home />;
+    return <Home setCurrentPage={setCurrentPage} />;
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="app-shell">
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main className="flex-grow px-4 py-6 max-w-7xl mx-auto w-full" style={{ minHeight: 'calc(100vh - 300px)' }}>
+      <main className="site-main">
         <Fade in={showPage}>
           <Box w="full">
             {renderPage()}

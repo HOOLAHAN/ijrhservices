@@ -1,75 +1,88 @@
 import React from 'react';
 import {
+  Badge,
   Box,
+  Button,
+  Flex,
   Heading,
+  Icon,
+  SimpleGrid,
   Text,
   VStack,
-  SimpleGrid,
 } from '@chakra-ui/react';
+import { FiArrowRight, FiCode, FiMap } from 'react-icons/fi';
 
-const Home: React.FC = () => {
-  const serviceDescriptions = {
-    'Measured Building Surveys': 'Detailed floor plans, elevations and sections for planning or design.',
-    'Topographic Surveys': 'Accurate land and site mapping using total station and GPS.',
-    'Site Engineering Support': 'Experienced support for setting out, QA, and contractor coordination.',
-  };
+interface HomeProps {
+  setCurrentPage: (page: string) => void;
+}
 
-  const services = Object.entries(serviceDescriptions);
-
-  return (
-    <Box
-      minH="100vh"
-      bgImage={`url('/media/brand/home_bg.png')`}
-      bgSize="cover"
-      bgPosition="center"
-      bgRepeat="no-repeat"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      px={{ base: 4, md: 8 }}
-      py={{ base: 6, md: 10 }}
-    >
-      <Box
-        bg="rgba(255, 255, 255, 0.65)"
-        borderRadius="md"
-        p={{ base: 4, md: 10 }}
-        maxW="7xl"
-        w="full"
-      >
-        <VStack spacing={6} textAlign="center">
-          <Heading as="h1" size="2xl">
-            Welcome to IJRH Services
-          </Heading>
-
-          <Heading as="h2" size="md" color="gray.600">
-            Accurate. Reliable. Built on site experience.
-          </Heading>
-
-          <Text fontSize="xl" maxW="600px">
-            Professional Land Surveying and Site Engineering Solutions for Residential and Commercial Projects.
-            Based in London and serving clients nationwide.
-          </Text>
-        </VStack>
-
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6} mt={16}>
-          {services.map(([title, description]) => (
-            <Box
-              key={title}
-              p={6}
-              borderWidth="1px"
-              borderRadius="lg"
-              textAlign="left"
-              bg="white"
-              shadow="sm"
-            >
-              <Heading size="md" mb={2}>{title}</Heading>
-              <Text fontSize="sm" color="gray.600">{description}</Text>
-            </Box>
-          ))}
-        </SimpleGrid>
-      </Box>
+const Home: React.FC<HomeProps> = ({ setCurrentPage }) => (
+  <Box className="home-shell">
+    <Box className="home-hero">
+      <VStack spacing={5} textAlign="center" maxW="850px" mx="auto">
+        <Badge className="eyebrow">Surveying &amp; Digital</Badge>
+        <Heading as="h1" className="hero-title">
+          Practical expertise.<br />Purposeful digital products.
+        </Heading>
+        <Text className="hero-copy">
+          IJRH Services brings together professional surveying and site engineering
+          with a growing collection of useful, thoughtfully built web experiences.
+        </Text>
+      </VStack>
     </Box>
-  );
-};
+
+    <Box maxW="1200px" mx="auto" px={{ base: 5, md: 8 }} pb={{ base: 14, md: 24 }}>
+      <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={{ base: 5, md: 8 }}>
+        <ServicePath
+          icon={FiMap}
+          number="01"
+          label="Surveying services"
+          title="Precision from the ground up."
+          description="Land surveying, measured building surveys and site engineering support, delivered with real on-site experience across London and nationwide."
+          action="Explore surveying"
+          tone="survey"
+          onClick={() => setCurrentPage('Surveying Services')}
+        />
+        <ServicePath
+          icon={FiCode}
+          number="02"
+          label="Web services"
+          title="Small ideas, well made."
+          description="Independent web apps and digital products—from a multiplayer dice game to a smarter way to discover your next city break."
+          action="View web projects"
+          tone="digital"
+          onClick={() => setCurrentPage('Web Services')}
+        />
+      </SimpleGrid>
+    </Box>
+  </Box>
+);
+
+interface ServicePathProps {
+  icon: React.ElementType;
+  number: string;
+  label: string;
+  title: string;
+  description: string;
+  action: string;
+  tone: 'survey' | 'digital';
+  onClick: () => void;
+}
+
+const ServicePath: React.FC<ServicePathProps> = ({ icon, number, label, title, description, action, tone, onClick }) => (
+  <Box className={`path-card path-card--${tone}`} onClick={onClick} tabIndex={0} role="button"
+    onKeyDown={(event) => (event.key === 'Enter' || event.key === ' ') && onClick()}>
+    <Flex justify="space-between" align="start">
+      <Box className="path-icon"><Icon as={icon} boxSize={6} /></Box>
+      <Text className="path-number">{number}</Text>
+    </Flex>
+    <Text className="path-label">{label}</Text>
+    <Heading as="h2" className="path-title">{title}</Heading>
+    <Text className="path-copy">{description}</Text>
+    <Button className="path-action" variant="link" rightIcon={<FiArrowRight />} onClick={onClick}>
+      {action}
+    </Button>
+  </Box>
+);
 
 export default Home;

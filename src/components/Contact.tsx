@@ -36,9 +36,9 @@ const Contact: React.FC = () => {
             <Text fontSize="sm">London, United Kingdom</Text>
           </HStack>
 
-          <Text fontSize="sm" color="gray.400" mt={2}>
+          <Text fontSize="sm" color="gray.200" mt={2}>
             &copy; {new Date().getFullYear()} IJRH Services Ltd. Registered in England and Wales. Company No. 16424854.{' '}
-            <Link onClick={onOpen} textDecoration="underline" _hover={{ color: 'gray.300' }}>
+            <Link onClick={onOpen} textDecoration="underline" _hover={{ color: 'white' }}>
               Privacy Policy
             </Link>
           </Text>
