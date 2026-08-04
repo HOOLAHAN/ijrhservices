@@ -42,7 +42,7 @@ const WebServices: React.FC = () => (
     <Box className="web-intro">
       <Text className="section-kicker">Web services</Text>
       <Heading>Useful ideas, brought to life.</Heading>
-      <Text>IJRH builds and operates a growing collection of focused web products and mobile applications. Each one has its own home, with IJRH Services providing the foundation behind it.</Text>
+      <Text>IJRH builds and operates a growing collection of focused web products and mobile applications, providing the foundation behind every one.</Text>
     </Box>
     <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6} maxW="1100px" mx="auto">
       {products.map(product => (

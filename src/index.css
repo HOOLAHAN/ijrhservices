@@ -9,7 +9,8 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .nav-logo { width: 164px; height: 43px; object-fit: contain; }
 .nav-descriptor { margin-left: 18px; padding-left: 18px; border-left: 1px solid #c8ceca; color: #66736f; font-size: 12px; letter-spacing: .11em; text-transform: uppercase; }
 .nav-link { color: var(--ink) !important; border-radius: 999px !important; font-size: 14px !important; font-weight: 600 !important; }
-.nav-link.active { background: #e2e8e3 !important; }
+.nav-link.active { color: white !important; background: var(--teal) !important; box-shadow: 0 0 0 2px rgba(23,109,99,.18); }
+.nav-link.active:hover { background: #10584f !important; }
 .contact-button { margin-left: 8px; border-radius: 999px !important; background: var(--ink) !important; color: white !important; }
 .home-shell { min-height: 80vh; background: radial-gradient(circle at 15% 10%, #fff 0, transparent 30%), var(--cream); }
 .home-hero { padding: clamp(70px, 10vw, 130px) 24px 82px; }
@@ -48,10 +49,11 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .product-card .chakra-badge { margin-bottom: 14px; background: rgba(255,255,255,.35); color: inherit; }
 .product-card h2 { font-size: 34px; letter-spacing: -.03em; }
 .product-card > p { margin: 14px 0 28px; max-width: 470px; line-height: 1.7; opacity: .9; flex: 1; }
-.product-card button, .product-card a[role=button] { background: currentColor; }
-.product-card button span, .product-card a[role=button] { color: white; }
-.product-card--yahtzee a[role=button] { background: #54251f; }
-.product-card--tipsy a[role=button] { background: #123934; }
-.product-card--harbour a[role=button] { background: #183b4b; }
-.product-card--pfgeomatics a[role=button] { background: #3b3520; }
+.product-card a[role=button] { min-height: 44px; padding-inline: 20px; color: white !important; border: 2px solid transparent; box-shadow: 0 3px 10px rgba(17,29,28,.16); font-weight: 700; text-decoration: none; }
+.product-card a[role=button] span { color: white !important; }
+.product-card--yahtzee a[role=button] { background: #54251f !important; }
+.product-card--tipsy a[role=button] { background: #123934 !important; }
+.product-card--harbour a[role=button] { background: #183b4b !important; }
+.product-card--pfgeomatics a[role=button] { background: #3b3520 !important; }
+.product-card a[role=button]:hover { filter: brightness(.88); transform: translateY(-1px); }
 @media (max-width: 767px) { .site-nav { padding: 10px 16px; } .nav-logo { width: 140px; } .nav-descriptor { display: none; } .home-hero { padding-top: 64px; } .path-card { min-height: 390px; } }
