@@ -22,23 +22,23 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => (
       <VStack spacing={5} textAlign="center" maxW="850px" mx="auto">
         <Badge className="eyebrow">Surveying &amp; Digital</Badge>
         <Heading as="h1" className="hero-title">
-          Practical expertise.<br />Purposeful digital products.
+          Surveying expertise.<br />Digital products.
         </Heading>
         <Text className="hero-copy">
-          IJRH Services brings together professional surveying and site engineering
-          with a growing collection of useful, thoughtfully built web experiences.
+          Professional surveying and site engineering, alongside web products,
+          mobile applications and company websites.
         </Text>
       </VStack>
     </Box>
 
-    <Box maxW="1200px" mx="auto" px={{ base: 5, md: 8 }} pb={{ base: 14, md: 24 }}>
+    <Box maxW="1200px" mx="auto" px={{ base: 5, md: 8 }} pb={{ base: 14, md: 20 }}>
       <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={{ base: 5, md: 8 }}>
         <ServicePath
           icon={FiMap}
           number="01"
           label="Surveying services"
           title="Precision from the ground up."
-          description="Land surveying, measured building surveys and site engineering support, delivered with real on-site experience across London and nationwide."
+          description="Land surveying, measured building surveys and site engineering support across London and surrounding areas."
           action="Explore surveying"
           tone="survey"
           onClick={() => setCurrentPage('Surveying Services')}
@@ -48,7 +48,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => (
           number="02"
           label="Web services"
           title="Small ideas, well made."
-          description="Independent web apps and digital products—from a multiplayer dice game to a smarter way to discover your next city break."
+          description="Web products, mobile applications and company websites—from original consumer ideas to professional client showcases."
           action="View web projects"
           tone="digital"
           onClick={() => setCurrentPage('Web Services')}
