@@ -50,12 +50,18 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .product-card .chakra-badge { margin-bottom: 14px; background: rgba(255,255,255,.35); color: inherit; }
 .product-card h2 { font-size: 34px; letter-spacing: -.03em; }
 .product-card > p { margin: 14px 0 28px; max-width: 470px; line-height: 1.7; opacity: .9; flex: 1; }
-.product-card a[role=button] { min-height: 44px; padding-inline: 20px; color: white !important; border: 2px solid transparent; box-shadow: 0 3px 10px rgba(17,29,28,.16); font-weight: 700; text-decoration: none; }
-.product-card a[role=button] span { color: white !important; }
-.product-card--yahtzee a[role=button] { background: #54251f !important; }
-.product-card--trippa a[role=button] { background: #123934 !important; }
-.product-card--turkeys a[role=button] { background: #54291d !important; }
-.product-card--harbour a[role=button] { background: #183b4b !important; }
-.product-card--pfgeomatics a[role=button] { background: #3b3520 !important; }
-.product-card a[role=button]:hover { filter: brightness(.88); transform: translateY(-1px); }
+.app-store-download { width: 100%; margin: 0 0 24px; padding: 16px; display: flex; align-items: center; gap: 18px; border: 2px solid currentColor; border-radius: 16px; }
+.app-store-qr { padding: 8px; display: block; flex: 0 0 auto; background: white; border-radius: 9px; line-height: 0; }
+.app-store-qr svg { width: 96px; height: 96px; }
+.app-store-label { font-weight: 800; }
+.app-store-hint { margin-top: 4px; font-size: 14px; line-height: 1.45; opacity: .85; }
+.product-card .chakra-button { min-height: 44px; padding-inline: 20px; background: #142321 !important; color: white !important; border: 2px solid #142321; box-shadow: 0 3px 10px rgba(17,29,28,.16); font-weight: 700; text-decoration: none; }
+.product-card .chakra-button span { color: white !important; }
+.product-card--yahtzee .chakra-button { background: #54251f !important; border-color: #54251f; }
+.product-card--trippa .chakra-button { background: #123934 !important; border-color: #123934; }
+.product-card--turkeys .chakra-button { background: #54291d !important; border-color: #54291d; }
+.product-card--harbour .chakra-button { background: #183b4b !important; border-color: #183b4b; }
+.product-card--pfgeomatics .chakra-button { background: #3b3520 !important; border-color: #3b3520; }
+.product-card .chakra-button:hover { filter: brightness(.82); transform: translateY(-1px); }
+@media (max-width: 420px) { .app-store-download { align-items: flex-start; } .app-store-qr svg { width: 82px; height: 82px; } }
 @media (max-width: 767px) { .site-nav { padding: 10px 16px; } .nav-logo { width: 140px; } .nav-descriptor { display: none; } .home-hero { padding-top: 52px; } .path-card { min-height: 360px; } }

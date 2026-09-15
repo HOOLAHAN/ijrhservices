@@ -1,12 +1,14 @@
 import React from 'react';
 import { Badge, Box, Button, Heading, SimpleGrid, Text } from '@chakra-ui/react';
 import { FiArrowUpRight } from 'react-icons/fi';
+import QRCode from 'react-qr-code';
 
 const products = [
   {
     name: 'Yahtzee',
     tag: 'Game',
     url: 'https://yahtzee.ijrhservices.co.uk/',
+    appStoreUrl: 'https://apps.apple.com/gb/app/yahtzee-hub/id6794910138',
     description: 'A polished digital take on the classic dice game. Quick to learn, easy to play and built for friendly competition.',
     mark: 'Y',
     tone: 'yahtzee',
@@ -59,6 +61,17 @@ const WebServices: React.FC = () => (
           <Badge>{product.tag}</Badge>
           <Heading>{product.name}</Heading>
           <Text>{product.description}</Text>
+          {'appStoreUrl' in product && product.appStoreUrl && (
+            <Box className="app-store-download">
+              <Box as="a" className="app-store-qr" href={product.appStoreUrl} target="_blank" rel="noopener noreferrer" aria-label={`Download ${product.name} from the App Store`}>
+                <QRCode value={product.appStoreUrl} size={112} title={`App Store QR code for ${product.name}`} />
+              </Box>
+              <Box>
+                <Text className="app-store-label">Available on the App Store</Text>
+                <Text className="app-store-hint">Scan to download Yahtzee Hub</Text>
+              </Box>
+            </Box>
+          )}
           <Button as="a" href={product.url} target="_blank" rel="noopener noreferrer" rightIcon={<FiArrowUpRight />}>
             Visit {product.name}
           </Button>
