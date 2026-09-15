@@ -41,7 +41,8 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .web-page .section-kicker { color: #bdcf70 !important; }
 .product-card { min-height: 400px; padding: clamp(28px, 4vw, 42px); display: flex; flex-direction: column; align-items: flex-start; border-radius: 22px; }
 .product-card--yahtzee { background: #f7e8df; color: #54251f; }
-.product-card--tipsy { background: #9ecac2; color: #123934; }
+.product-card--trippa { background: #9ecac2; color: #123934; }
+.product-card--turkeys { background: #efd19a; color: #54291d; }
 .product-card--harbour { background: #dbe8ee; color: #183b4b; }
 .product-card--pfgeomatics { background: #e4dfca; color: #3b3520; }
 .product-card--soon { min-height: 290px; background: transparent; border: 1px dashed #52615e; color: white; }
@@ -52,7 +53,8 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .product-card a[role=button] { min-height: 44px; padding-inline: 20px; color: white !important; border: 2px solid transparent; box-shadow: 0 3px 10px rgba(17,29,28,.16); font-weight: 700; text-decoration: none; }
 .product-card a[role=button] span { color: white !important; }
 .product-card--yahtzee a[role=button] { background: #54251f !important; }
-.product-card--tipsy a[role=button] { background: #123934 !important; }
+.product-card--trippa a[role=button] { background: #123934 !important; }
+.product-card--turkeys a[role=button] { background: #54291d !important; }
 .product-card--harbour a[role=button] { background: #183b4b !important; }
 .product-card--pfgeomatics a[role=button] { background: #3b3520 !important; }
 .product-card a[role=button]:hover { filter: brightness(.88); transform: translateY(-1px); }
