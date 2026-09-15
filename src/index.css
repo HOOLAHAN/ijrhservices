@@ -39,21 +39,21 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .web-page { background: #111d1c; color: white; }
 .web-intro > p:last-child { color: #aebbb7; }
 .web-page .section-kicker { color: #bdcf70 !important; }
-.product-card { min-height: 400px; padding: clamp(28px, 4vw, 42px); display: flex; flex-direction: column; align-items: flex-start; border-radius: 22px; }
+.product-card { min-height: 330px; padding: clamp(24px, 3vw, 32px); display: flex; flex-direction: column; align-items: flex-start; border-radius: 22px; }
 .product-card--yahtzee { background: #f7e8df; color: #54251f; }
 .product-card--trippa { background: #9ecac2; color: #123934; }
 .product-card--turkeys { background: #efd19a; color: #54291d; }
 .product-card--harbour { background: #dbe8ee; color: #183b4b; }
 .product-card--pfgeomatics { background: #e4dfca; color: #3b3520; }
 .product-card--soon { min-height: 290px; background: transparent; border: 1px dashed #52615e; color: white; }
-.product-mark { width: 70px; height: 70px; margin-bottom: 46px; display: grid; place-items: center; border: 2px solid currentColor; border-radius: 20px; font-size: 25px; font-weight: 900; }
-.product-card .chakra-badge { margin-bottom: 14px; background: rgba(255,255,255,.35); color: inherit; }
-.product-card h2 { font-size: 34px; letter-spacing: -.03em; }
-.product-card > p { margin: 14px 0 28px; max-width: 470px; line-height: 1.7; opacity: .9; flex: 1; }
-.app-store-download { width: 100%; margin: 0 0 24px; padding: 16px; display: flex; align-items: center; gap: 18px; border: 2px solid currentColor; border-radius: 16px; }
-.app-store-qr { padding: 8px; display: block; flex: 0 0 auto; background: white; border-radius: 9px; line-height: 0; }
-.app-store-qr svg { width: 96px; height: 96px; }
-.app-store-label { font-weight: 800; }
+.product-mark { width: 54px; height: 54px; margin-bottom: 24px; display: grid; place-items: center; border: 2px solid currentColor; border-radius: 15px; font-size: 20px; font-weight: 900; }
+.product-card .chakra-badge { margin-bottom: 10px; background: rgba(255,255,255,.35); color: inherit; }
+.product-card h2 { font-size: 30px; letter-spacing: -.03em; }
+.product-card > p { margin: 10px 0 20px; max-width: 470px; line-height: 1.55; opacity: .9; flex: 1; }
+.app-store-download { width: 100%; margin: 0 0 18px; padding: 10px; display: flex; align-items: center; gap: 14px; border: 1px solid currentColor; border-radius: 13px; }
+.app-store-qr { padding: 6px; display: block; flex: 0 0 auto; background: white; border-radius: 7px; line-height: 0; }
+.app-store-qr svg { width: 72px; height: 72px; }
+.app-store-label { font-size: 14px; font-weight: 800; }
 .app-store-hint { margin-top: 4px; font-size: 14px; line-height: 1.45; opacity: .85; }
 .product-card .chakra-button { min-height: 44px; padding-inline: 20px; background: #142321 !important; color: white !important; border: 2px solid #142321; box-shadow: 0 3px 10px rgba(17,29,28,.16); font-weight: 700; text-decoration: none; }
 .product-card .chakra-button span { color: white !important; }
@@ -63,5 +63,5 @@ html, body, #root { width: 100%; overflow-x: hidden; }
 .product-card--harbour .chakra-button { background: #183b4b !important; border-color: #183b4b; }
 .product-card--pfgeomatics .chakra-button { background: #3b3520 !important; border-color: #3b3520; }
 .product-card .chakra-button:hover { filter: brightness(.82); transform: translateY(-1px); }
-@media (max-width: 420px) { .app-store-download { align-items: flex-start; } .app-store-qr svg { width: 82px; height: 82px; } }
+@media (max-width: 420px) { .app-store-download { align-items: flex-start; } .app-store-qr svg { width: 64px; height: 64px; } .app-store-hint { font-size: 13px; } }
 @media (max-width: 767px) { .site-nav { padding: 10px 16px; } .nav-logo { width: 140px; } .nav-descriptor { display: none; } .home-hero { padding-top: 52px; } .path-card { min-height: 360px; } }

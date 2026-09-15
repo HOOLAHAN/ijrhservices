@@ -9,6 +9,7 @@ const products = [
     tag: 'Game',
     url: 'https://yahtzee.ijrhservices.co.uk/',
     appStoreUrl: 'https://apps.apple.com/gb/app/yahtzee-hub/id6794910138',
+    appStoreName: 'Yahtzee Hub',
     description: 'A polished digital take on the classic dice game. Quick to learn, easy to play and built for friendly competition.',
     mark: 'Y',
     tone: 'yahtzee',
@@ -17,6 +18,8 @@ const products = [
     name: 'Trippa',
     tag: 'Travel',
     url: 'https://trippa.ijrhservices.co.uk/',
+    appStoreUrl: 'https://apps.apple.com/gb/app/trippa/id6795644481',
+    appStoreName: 'Trippa!',
     description: 'A personalised travel companion for planning itineraries, discovering places and making more of every trip.',
     mark: 'T',
     tone: 'trippa',
@@ -64,11 +67,11 @@ const WebServices: React.FC = () => (
           {'appStoreUrl' in product && product.appStoreUrl && (
             <Box className="app-store-download">
               <Box as="a" className="app-store-qr" href={product.appStoreUrl} target="_blank" rel="noopener noreferrer" aria-label={`Download ${product.name} from the App Store`}>
-                <QRCode value={product.appStoreUrl} size={112} title={`App Store QR code for ${product.name}`} />
+                <QRCode value={product.appStoreUrl} size={88} title={`App Store QR code for ${product.name}`} />
               </Box>
               <Box>
                 <Text className="app-store-label">Available on the App Store</Text>
-                <Text className="app-store-hint">Scan to download Yahtzee Hub</Text>
+                <Text className="app-store-hint">Scan to download {product.appStoreName}</Text>
               </Box>
             </Box>
           )}
